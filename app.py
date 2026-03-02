@@ -140,3 +140,4 @@ else:
                 st.plotly_chart(px.bar(df_o.groupby("Ders")["Toplam"].sum().reset_index(), x="Ders", y="Toplam", color="Ders"))
             r_msg = f"Nida Hocam, Ben {u}. Bugün raporum hazır!"
             st.markdown(f'<a href="https://wa.me/{HOCA_TEL}?text={urllib.parse.quote(r_msg)}" target="_blank" style="background-color:#007bff; color:white; padding:15px; text-decoration:none; border-radius:10px;">📤 HOCAMA RAPOR GÖNDER</a>', unsafe_allow_html=True)
+            
